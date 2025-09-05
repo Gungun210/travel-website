@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TripGlide - Destinations</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>TripGlide</h1>
+  <nav>
+    <a href="Home_page.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="destinations.html">Destinations</a>
+    <a href="packages.html">Packages</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="booking.html">Book a Trip</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section id="destinations">
+  <h2>Explore Our Destinations</h2>
+
+  <div class="filters">
+    <button onclick="filterDest('all')">All</button>
+    <button onclick="filterDest('beach')">Beach</button>
+    <button onclick="filterDest('adventure')">Adventure</button>
+    <button onclick="filterDest('cultural')">Cultural</button>
+    <button onclick="filterDest('honeymoon')">Honeymoon</button>
+  </div>
+
+  <div class="grid" id="destinationsGrid">
+
+    <div class="card beach">
+      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=60" alt="Goa">
+      <h3>Goa</h3>
+      <p>Beaches, nightlife, and water sports.</p>
+      <button class="book-btn" onclick="bookTrip('Goa')">Book Now</button>
+    </div>
+
+    <div class="card adventure">
+      <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1200&q=60" alt="Manali">
+      <h3>Manali</h3>
+      <p>Snow-capped mountains and adventure sports.</p>
+      <button class="book-btn" onclick="bookTrip('Manali')">Book Now</button>
+    </div>
+
+    <div class="card cultural">
+      <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1200&q=60" alt="Jaipur">
+      <h3>Jaipur</h3>
+      <p>Palaces, forts, and cultural heritage tours.</p>
+      <button class="book-btn" onclick="bookTrip('Jaipur')">Book Now</button>
+    </div>
+
+    <div class="card honeymoon">
+      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=60" alt="Andaman">
+      <h3>Andaman</h3>
+      <p>Romantic beaches and turquoise waters.</p>
+      <button class="book-btn" onclick="bookTrip('Andaman')">Book Now</button>
+    </div>
+
+    <div class="card adventure">
+      <img src="https://images.unsplash.com/photo-1559599189-0d667c04631f?auto=format&fit=crop&w=1200&q=60" alt="Rishikesh">
+      <h3>Rishikesh</h3>
+      <p>River rafting, camping, and adventure activities.</p>
+      <button class="book-btn" onclick="bookTrip('Rishikesh')">Book Now</button>
+    </div>
+
+    <div class="card cultural">
+      <img src="https://images.unsplash.com/photo-1502772066658-c2d9a053e8d8?auto=format&fit=crop&w=1200&q=60" alt="Varanasi">
+      <h3>Varanasi</h3>
+      <p>Spiritual tours and ancient temples.</p>
+      <button class="book-btn" onclick="bookTrip('Varanasi')">Book Now</button>
+    </div>
+
+    <div class="card beach honeymoon">
+      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=60" alt="Maldives">
+      <h3>Maldives</h3>
+      <p>Crystal-clear water, perfect for honeymoon.</p>
+      <button class="book-btn" onclick="bookTrip('Maldives')">Book Now</button>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 TripGlide. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
