@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel Website</title>
+  <style>
+    /* Basic styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    header h1 {
+      color: #4f46e5;
+      margin: 0;
+    }
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #333;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .hero {
+      background: linear-gradient(to right, #eef2ff, #fce7f3);
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .destinations {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .card .content {
+      padding: 1rem;
+    }
+    .card h3 {
+      margin: 0 0 0.5rem;
+    }
+    .card button {
+      margin-top: 0.5rem;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .book-btn {
+      background: #4f46e5;
+      color: white;
+    }
+    .footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: white;
+      margin-top: 2rem;
+      box-shadow: 0 -2px 4px rgba(0,0,0,0.05);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>TripGlide</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#destinations">Destinations</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Discover Your Next Unforgettable Trip</h2>
+    <p>Hand-picked destinations and flexible bookings — all in one place.</p>
+  </section>
+
+  <!-- Destinations -->
+  <section id="destinations" class="destinations">
+    <h2>Popular Destinations</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1200&q=60" alt="Manali">
+        <div class="content">
+          <h3>Manali, India</h3>
+          <p>Snow-capped peaks and apple orchards in the Himalayas.</p>
+          <button class="book-btn">Book Now</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=60" alt="Goa">
+        <div class="content">
+          <h3>Goa, India</h3>
+          <p>Sun, sand, and nightlife on the beaches.</p>
+          <button class="book-btn">Book Now</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1200&q=60" alt="Jaipur">
+        <div class="content">
+          <h3>Jaipur, India</h3>
+          <p>Palaces, bazaars, and cultural heritage.</p>
+          <button class="book-btn">Book Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="destinations">
+    <h2>Contact Us</h2>
+    <form onsubmit="alert('Thanks! We will contact you soon.'); return false;">
+      <input type="text" placeholder="Your Name" required style="padding:10px; width:100%; margin:5px 0;"><br>
+      <input type="email" placeholder="Your Email" required style="padding:10px; width:100%; margin:5px 0;"><br>
+      <textarea placeholder="Message" required style="padding:10px; width:100%; margin:5px 0;"></textarea><br>
+      <button type="submit" class="book-btn">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    © 2025 TripGlide. All rights reserved.
+  </footer>
+
+</body>
+</html>
