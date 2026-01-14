@@ -1,4 +1,4 @@
-<img width="1892" height="796" alt="Screenshot 2025-10-30 201205" src="https://github.com/user-attachments/assets/189fb3cb-7807-4cac-b411-2febeb48a400" /># travel-website
+# travel-website
 
 ## Problem
 Many travelers face difficulty in finding reliable travel information,
@@ -29,6 +29,7 @@ travel information in one place.
 ## Output
 
 ![Travel Website Homepage](https://github.com/user-attachments/assets/4bc688b8-24a1-4a79-95a3-67c8f7536d76)
+
 
 ## Author
 Gungun  
